@@ -78,7 +78,7 @@ There are many stealth games, but *Gray Man* stands out because:
 |--------|--------------|
 | ![Third-person view](images/2.jpg) | New third-person perspective gameplay |
 | ![Player animation](images/3.jpg) | Custom player model and animation |
-| ![Enemy model](./Screenshots/enemy_model.jpg) | Redesigned enemy with new patrol system |
+| ![Enemy model](images/6.jpg) | Redesigned enemy with new patrol system |
 | ![New menu](images/1.jpg) | Custom start menu and updated UI |
 | ![Win scene](images/5.jpg) | Added ending sequence and win condition |
 
