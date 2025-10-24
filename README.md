@@ -92,12 +92,11 @@ There are many stealth games, but *Gray Man* stands out because:
 Please keep the `.exe` file and its data folder in the same directory.)*
 
 ---
+## 🔗 Credits & Base Project
 
-## 🧑‍💻 Notes
-
-While *Gray Man* is developed in **Unity (C#)**, I also have hands-on experience with **C++** for game engine and gameplay logic.  
-This project serves as a practical example of my design, refactoring, and game system implementation skills.
+This project was originally based on the open-source Unity project:
+GitHub: https://github.com/HenrySpartGlobal/Unity_Stealth_Game
 
 ---
 
-© 2025 Minh Doan – All rights reserved.
+© 2025 Nyuming – All rights reserved.
