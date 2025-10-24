@@ -1,50 +1,103 @@
-# Unity Stealth Game
+# 🎮 Gray Man – A Third-Person Stealth Game
 
-A simple Stealth based game where the aim is to get to the safe area, marked green, without being spotted by the guards on the level. Each guard has a spotlight, which visually represents their Vision cone. Players can use obstacles and walls placed around the level to sneak past and around guards. 
+**Gray Man** is a 3D stealth-based game built with Unity and C#.  
+The goal is simple: reach the **safe zone** without being spotted by the guards.  
+Unlike traditional top-down stealth games, **Gray Man** reimagines the experience in **third-person perspective**, bringing a more immersive and modern gameplay feel.
 
-The guards spotlight colour will change if they are visually aware of the player. The spotlight colour change is a visual aid to inform the player to rethink their approach and reposition if need be. 
+---
 
-# How to Play
+## 🧍‍♂️ Project Overview
 
-Use the arrow keys or WASD on your keyboard to move the player, simple!
+- **Developer:** Solo (Personal Project)
+- **Engine:** Unity 2022 LTS
+- **Language:** C#
+- **Genre:** Stealth / Action
+- **Platform:** Windows (.exe build)
 
-# Guards 
+---
 
-As mentioned above the spotlight emitting from the guards represents the guards vision cone. If a player enters this area then the game is over. However,  the guards actual vision distance is slightly shorter than the perceived spot light particle effect. This is to decrease difficulty as the the light is faded towards the end of the spotlight, and knowing the exact distance is hard to judge.
+## ⚙️ Technical Details
 
-The red line represents the guards real vision distance. This can be adjusted to increase or decrease difficulty.
+### 🧠 Individual Responsibilities
+- Converted the original *top-down stealth game* into a **third-person camera system** using Cinemachine.
+- Rebuilt the **player movement system** to support smooth FPS-style controls.
+- Added **new player and enemy 3D models** with animation controllers.
+- Reworked **environment textures** and lighting for enhanced atmosphere.
+- Designed a new **UI menu system** and added a **Win Scene** to complete the gameplay loop.
+- Optimized patrol and detection logic for guards.
 
-![guard_view_distance](https://user-images.githubusercontent.com/31442053/33516441-b6e9e5da-d76a-11e7-944f-1cf8df7ac15c.png)
+### 🧩 Technical Stack
+- Unity 2022.3 LTS  
+- C#  
+- Unity Animator, NavMesh, Cinemachine, TextMeshPro  
+- Free assets from Unity Asset Store  
 
+### 🧱 Design Patterns & Principles
+- **Singleton:** Used for global `GameManager` to handle scene flow and state.
+- **Observer Pattern:** For updating UI elements such as detection alerts and mission status.
+- **Component-based Design:** Separated gameplay systems (Movement, AI, UI) for maintainability.
+- **State Machine:** Used in guard AI (Patrol → Detect → Chase → Idle).
+- **SOLID Principles:** Ensured modular and reusable gameplay code.
 
-The player is not seen behind obstacles and the light from the guard also does not display through obstacles. 
-![player_not_seen](https://user-images.githubusercontent.com/31442053/33516452-f30ea398-d76a-11e7-97d0-00d80bf525fc.png)
+---
 
+## 💡 Why This Project?
 
-Guards have public variables exposed in the Game engine which can be increased or decreased depending on the required difficulty. Behaviors such as: 
+I chose *Gray Man* because it represents how I approach real-world game development:
+- Understanding an existing codebase,  
+- Refactoring and improving core systems, and  
+- Expanding gameplay with creative and technical contributions.
 
-- Turn Speed
-- Move Speed
-- Wait Time
-- Awareness Timer 
+Although the project originated from a base Unity stealth sample, I **redesigned the entire experience** into a third-person format, added new assets and systems, and implemented modern gameplay mechanics.  
+This demonstrates both **technical ability** and **adaptability**—skills crucial for professional game development.
 
-The below screenshot demonstrates the red light when the player has been seen. Circles show guards patrol path. 
-![player_seen](https://user-images.githubusercontent.com/31442053/33516464-139e6d1e-d76b-11e7-8d37-95ba3f5f7d3b.png)
+---
 
+## 🎯 What Makes It Unique
 
-Completed level with several guards.
-![finished_game](https://user-images.githubusercontent.com/31442053/33516475-2d62ca60-d76b-11e7-8b27-cefd1a9ff3ec.png)
+There are many stealth games, but *Gray Man* stands out because:
+- It **transforms a 2D top-down prototype into a functional 3D stealth experience**.  
+- Combines classic stealth mechanics with **FPS-style immersion**.  
+- Balances accessibility and tension using clear visual cues (guard light cones, alert states).  
+- Clean, modular code ready for future feature expansion.
 
+---
 
-*All assets used are free from the Unity Asset store*
+## 🕹️ How to Play
 
-# Download 
+- **Move:** `WASD` or Arrow Keys  
+- **Camera:** Mouse  
+- **Objective:** Reach the green safe area without being detected.  
+- If the guard sees you (spotlight turns red), the game resets.
 
-Clone and Download this project (ZIP). Open the "Stealth_Game" Game folder and run the "StealthGame_Build" Unity Application. 
+---
 
-This will open the Unity Game.
+## 🖼️ Screenshots
 
-**DO NOT MOVE THE EXE FILE OR THE GAME WILL NOT RUN CORRECTLY** 
+| Scene | Description |
+|--------|--------------|
+| ![Third-person view](./Screenshots/thirdperson_view.jpg) | New third-person perspective gameplay |
+| ![Player animation](./Screenshots/player_animation.jpg) | Custom player model and animation |
+| ![Enemy model](./Screenshots/enemy_model.jpg) | Redesigned enemy with new patrol system |
+| ![New menu](./Screenshots/menu_ui.jpg) | Custom start menu and updated UI |
+| ![Win scene](./Screenshots/win_scene.jpg) | Added ending sequence and win condition |
 
+---
 
+## 📦 Download
 
+👉 [Play Gray Man on itch.io](https://your-itch-page-link-here)
+
+*(If you are running locally: open the “GrayMan_Build” folder and run `GrayMan.exe`.  
+Please keep the `.exe` file and its data folder in the same directory.)*
+
+---
+
+## 🧑‍💻 Notes
+
+While *Gray Man* is developed in **Unity (C#)**, I also have hands-on experience with **C++** for game engine and gameplay logic.  
+This project serves as a practical example of my design, refactoring, and game system implementation skills.
+
+---
+
+© 2025 Minh Doan – All rights reserved.
