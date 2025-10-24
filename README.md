@@ -84,9 +84,9 @@ There are many stealth games, but *Gray Man* stands out because:
 
 ---
 
-## 📦 Download
+## 📦 Play
 
-👉 [Play Gray Man on itch.io](https://your-itch-page-link-here)
+👉 [Play Gray Man on itch.io](https://nyuming.itch.io/grayman)
 
 *(If you are running locally: open the “GrayMan_Build” folder and run `GrayMan.exe`.  
 Please keep the `.exe` file and its data folder in the same directory.)*
